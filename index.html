@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wook's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link href = "https://fonts.googleapis.com/css2? family = Gothic + A1 : wght @ 100; 200; 300; 400; 500; 600; 700; 800; 900 & display = swap "rel ="stylesheet ">
+  </head>
+  <body>
+   <header>
+     <nav>
+       <div class="logo">
+         <img src="img/01_logo.png" alt="Wook's Portfolio">
+       </div>
+       <div class="menu">
+         <ul>
+           <li><a onclick="fnMove('1')">Profile</a></li>
+           <li><a onclick="fnMove('2')">Editorial design</a></li>
+           <li><a onclick="fnMove('3')">Ad design</a></li>
+           <li><a onclick="fnMove('4')">Package design</a></li>
+           <li><a onclick="fnMove('5')">Identity design</a></li>
+         </ul>
+       </div>
+     </nav>
+   </header>
+
+   <section>
+    <div class="keyvisual">
+      <div class="keyvisual_wrap">
+      </div>
+    </div>
+    <div class="Profile" id="anchor1">
+      <div class="Profile_wrap">
+        <div class="Profile_01"><img src="img/03_portfolio.png" alt="이건 프로필이다."></div>
+        <div class="Profile_02"><img src="img/04_menu.png" alt="이건 메뉴같은 메뉴다."></div>
+      </div>
+    </div>
+    <div class="eddesing" id="anchor2">
+      <div class="eddesing_wrap">
+        <div class="eddesing_01" data-aos="fade-down"><img src="img/05_ed_01.png" alt="달력디자인"></div>
+        <div class="eddesing_02" data-aos="fade-down"><img src="img/05_ed_02.png" alt="신문디자인"></div>
+        <div class="eddesing_03" data-aos="fade-down"><img src="img/05_ed_03.png" alt="북커버디자인"></div>
+        <div class="eddesing_04" data-aos="fade-down"><img src="img/05_ed_04.png" alt="북커버디자인"></div>
+        <div class="eddesing_05" data-aos="fade-down"><img src="img/05_ed_05.png" alt="나이키리플렛"></div>
+        <div class="eddesing_06" data-aos="fade-down"><img src="img/05_ed_06.png" alt="나이키리플렛"></div>
+      </div>
+    </div>
+    <div class="addesing" id="anchor3">
+      <div class="addesing_wrap">
+        <div class="addesing_01" data-aos="fade-down"><img src="img/06_ad_01.png" alt="포스터디자인"></div>
+        <div class="addesing_02" data-aos="fade-down"><img src="img/06_ad_02.png" alt="공익광고"></div>
+        <div class="addesing_03" data-aos="fade-down"><img src="img/06_ad_03.png" alt="공익광고"></div>
+      </div>
+    </div>
+    <div class="Packagedesign" id="anchor4">
+      <div class="Packagedesign_wrap">
+        <div class="Packagedesign_01" data-aos="fade-down"><img src="img/07_pk_01.png" alt="안동소주패키지"></div>
+        <div class="Packagedesign_02" data-aos="fade-down"><img src="img/07_pk_02.png" alt="안동소주패키"></div>
+      </div>
+    </div>
+    <div class="Identitydesign" id="anchor5">
+      <div class="Identitydesign_wrap">
+        <div class="Identitydesign_01" data-aos="fade-down"><img src="img/08_id_01.png" alt="SPC아디덴티티"></div>
+        <div class="Identitydesign_02" data-aos="fade-down"><img src="img/08_id_02.png" alt="SPC아디덴티티"></div>
+      </div>
+    </div>
+   </section>
+   <footer>
+    <div class="footer_wrap">
+     <div class="footer_logo"><img src="img/09_footer_logo.png" alt=""></div>
+  </div>
+   </footer>
+   <script type="text/javascript" src="js/jquery-latest.js"></script>
+   <script>
+     function fnMove(seq){
+       var offset = $("#anchor" + seq).offset();
+       $('html,body').animate({scrollTop : offset.top}, 1200);
+     }
+   </script>
+   <script type="text/javascript" src="js/aos.js"></script>
+   <script>
+     AOS.init({
+       easing: 'ease-in-out-sine'
+     });
+   </script>
+  </body>
+</html>
